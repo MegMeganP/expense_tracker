@@ -11,6 +11,8 @@ module ExpenseTracker
       API.new(ledger: ledger)
     end
 
+    let(:ledger) { instance_double('ExpenseTracker:Ledger')}
+
     describe 'POST /expenses' do
       context 'when the expense is successfully  recorded' do
         it 'returns the expense id' do
