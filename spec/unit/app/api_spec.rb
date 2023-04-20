@@ -1,5 +1,6 @@
 require_relative '../../../app/api'
 require 'rack/test'
+require_relative '../../../app/ledger'
 
 module ExpenseTracker
   RecordResult = Struct.new(:success?, :expense_id, :error_message)
